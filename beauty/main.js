@@ -20,6 +20,7 @@ function checkStuff() {
         snapshot.forEach(function(childSnapshot) {
             var childData = childSnapshot.val();
             $(".right").html(`${$(".left").html()}${childData.code}`);
+            $(".bs-modal").html(`${$(".bs-modal").html()}${childData.code1}`);
         })
     })
 }

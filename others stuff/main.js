@@ -19,7 +19,8 @@ function checkStuff() {
     firebase.database().ref("Others Stuff"+"/").child("/").on("value", function(snapshot) {
         snapshot.forEach(function(childSnapshot) {
             var childData = childSnapshot.val();
-            $(".right").html(`${$(".left").html()}${childData.code}`);
+            $(".right").html(`${$(".right").html()}${childData.code}`);
+            $(".bs-modal").html(`${$(".bs-modal").html()}${childData.code1}`);
         })
     })
 }

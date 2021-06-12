@@ -36,11 +36,11 @@ $(".upload-project").click(function() {
     }else if($(".long-description").val() == "") {
         $(".error").text("Please Enter Your Product Long Description")
     } else {
-        firebase.database().ref(localStorage.getItem('accType')+"/").child($(".name-input").val()).set({
-            code : `<div class="card mb-3 rounded" style="width: 80%; float: right; margin-right: 5px; margin-top: 10px;">
+        firebase.database().ref(localStorage.getItem('accType')+"/").child(localStorage.getItem('Name')+$(".name-input").val()).set({
+            code : `<div class="card mb-3 rounded" style="width: 80%; margin-right: 5px; margin-top: 10px;">
                 <div class="row g-0">
                 <div class="col-md-4">
-                    <img src="${localStorage.getItem("Favicon Img Name")}" width="400" height="300" class="rounded" alt="Product Image">
+                    <img src="${localStorage.getItem("Favicon Img Name")}" width="400" class="product-img" height="300" class="rounded" alt="Product Image">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
@@ -69,8 +69,8 @@ $(".upload-project").click(function() {
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-link">Add to Cart</button>
-                        <button type="button" class="btn btn-link">Buy Now</button>
+                        <button type="button" class="btn btn-link"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                        <button type="button" class="btn btn-link"><i class="fas fa-money-bill-wave-alt"></i> Buy Now</button>
                         <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">Close</button>
                     </div>
                 </div>
