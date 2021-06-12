@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Riolu</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+</head>
+<body>
+    <div class="registration-form">
+        <div class="form">
+            <div class="form-icon">
+                <span><i class="fab fa-product-hunt"></i></span>
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item name-input" placeholder="Item Name">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item description" placeholder="Item Description">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control item long-description" placeholder="Enter Item Long Description">
+            </div>
+            <div class="form-group">
+                <button class="form-control item dropdown-toggle drop" style="text-align: left; cursor: pointer;">Accessories Type</button>
+                <div class="dropdown-menu-item d-none">
+                    <button class="form-control item ha" style="text-align: left; cursor: pointer;">Home Accessories </button>
+                    <button class="form-control item ba" style="text-align: left; cursor: pointer;">Beauty Accessories </button>
+                    <button class="form-control item ga" style="text-align: left; cursor: pointer;">Game Accessories </button>
+                    <button class="form-control item ca" style="text-align: left; cursor: pointer;">Computer Accessories </button>
+                    <button class="form-control item ta" style="text-align: left; cursor: pointer;">Toys Accessories </button>
+                    <button class="form-control item os" style="text-align: left; cursor: pointer;">Others Stuff </button>
+                </div>
+            </div>
+            <div class="form-group">
+                <h4>Upload Favicon Image</h4>
+                <input class="upload" type="file">
+            </div>
+            <br>
+            <div class="form-group">
+                <input type="text" class="form-control item dollar" placeholder="How many Dollar for this product">
+            </div>
+            <div class="form-group">
+                <button type="button" class="btn btn-block create-account upload-project">Upload Product</button>
+            </div>
+            <br>
+            <br>
+            <p style="color: red;" class="error"></p>
+        </div>
+    </div>
+
+    <div style="width: 100%; height: 100vh; display: grid; place-items: center;" class="hide-div d-none">
+        <h1 style="text-align: center;">Your Product has been successfully Upload</h1>
+        <button class="go-back" style="background: none; outline: none; border: solid rgb(178, 178, 194); border-radius: 1px; padding: 20px;">Get Back</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
