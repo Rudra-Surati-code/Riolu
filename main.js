@@ -79,7 +79,7 @@ function signInWithEmailAndPassword() {
 }
 
 $(".sell-stuff").click(function(){
-    location.replace("/sell stuff/index.html")
+    location.replace("Riolu/sell stuff/index.html")
 })
 
 $(".logout").click(function() {
