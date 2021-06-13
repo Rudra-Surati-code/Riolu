@@ -79,7 +79,7 @@ function signInWithEmailAndPassword() {
 }
 
 $(".sell-stuff").click(function(){
-    location.replace("https://Rudra-Surati-code.github.io/Riolu/sell stuff/index.html")
+    location.replace("Riolu/sell stuff/index.html")
 })
 
 $(".logout").click(function() {
@@ -93,36 +93,36 @@ $(".logout").click(function() {
 
 $(".ha").click(function() {
     $("iframe").removeAttr("class");
-    $("iframe").attr("src", "https://Rudra-Surati-code.github.io/Riolu/home/index.html");
+    $("iframe").attr("src", "home/index.html");
     $("#carousel").addClass("d-none");
 })
 
 $(".ba").click(function() {
     $("iframe").removeAttr("class");
-    $("iframe").attr("src", "https://Rudra-Surati-code.github.io/Riolu/beauty/index.html");
+    $("iframe").attr("src", "beauty/index.html");
     $("#carousel").addClass("d-none");
 })
 
 $(".ga").click(function() {
     $("iframe").removeAttr("class");
-    $("iframe").attr("src", "https://Rudra-Surati-code.github.io/Riolu/gameing/index.html");
+    $("iframe").attr("src", "gameing/index.html");
     $("#carousel").addClass("d-none");
 })
 
 $(".ca").click(function() {
     $("iframe").removeAttr("class");
-    $("iframe").attr("src", "https://Rudra-Surati-code.github.io/Riolu/computer/index.html");
+    $("iframe").attr("src", "computer/index.html");
     $("#carousel").addClass("d-none");
 })
 
 $(".ta").click(function() {
     $("iframe").removeAttr("class");
-    $("iframe").attr("src", "https://Rudra-Surati-code.github.io/Riolu/toys/index.html");
+    $("iframe").attr("src", "toys/index.html");
     $("#carousel").addClass("d-none");
 })
 
 $(".os").click(function() {
     $("iframe").removeAttr("class");
-    $("iframe").attr("src", "https://Rudra-Surati-code.github.io/Riolu/others stuff/index.html");
+    $("iframe").attr("src", "others stuff/index.html");
     $("#carousel").addClass("d-none");
 })
