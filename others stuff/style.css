@@ -411,3 +411,24 @@ a:hover{
     color: #89229b !important;
     text-decoration: none !important;
 }
+
+.right {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width: 480px) {
+    .product-img {
+        width: 300px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .product-img {
+        width: 220px!important;
+    }
+}

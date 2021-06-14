@@ -126,3 +126,7 @@ $(".os").click(function() {
     $("iframe").attr("src", "/others stuff/index.html");
     $("#carousel").addClass("d-none");
 })
+
+window.addEventListener("contextmenu", function (event) {
+    event.preventDefault();
+})

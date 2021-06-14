@@ -50,3 +50,36 @@ iframe {
         height: 91.6vh;
     }
 }
+
+#context-menu {
+    position: fixed;
+    z-index: 1000005785675768574957589769568957685784798496794;
+    width: 150px;
+    background: #EEE;
+    border-radius: 10px;
+    padding: 10px;
+    transform-origin: top left;
+}
+
+#context-menu .item {
+    padding: 8px 10px;
+    font-size: 15px;
+    color: #000;
+    cursor: pointer;
+}
+
+#context-menu .item:hover {
+    background: #555;
+    color: #fff;
+}
+
+#context-menu .item i {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+#context-menu hr {
+    margin: 2px 0px;
+    border-color: #555;
+}
+

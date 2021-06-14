@@ -78,7 +78,8 @@ $(".upload-project").click(function() {
         </div>
         </div>
         </div>`,
-            accType : localStorage.getItem("accType")
+            accType : localStorage.getItem("accType"),
+            name : $(".name-input").val()
         })
 
         $(".hide-div").removeClass("d-none");
