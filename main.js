@@ -1,6 +1,9 @@
 function loader() {
     $(".loading").css("display", "none");
     $(".save-changes").attr("disabled", "true");
+
+    $(".cart-number").text(localStorage.getItem("Cart"))
+
     if(localStorage.getItem("Location") == null == false) {
         $(".select-location").addClass('d-none')
         $(".get-location").removeClass('d-none');

@@ -421,6 +421,14 @@ a:hover{
     flex-direction: column;
 }
 
+.headet {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 @media (max-width: 480px) {
     .product-img {
         width: 300px;

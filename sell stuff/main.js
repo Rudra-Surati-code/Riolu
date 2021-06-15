@@ -69,7 +69,7 @@ $(".upload-project").click(function() {
                         </p>
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-link"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+                        <button type="button" class="btn btn-link" id="addToCart"><i class="fas fa-cart-plus"></i> Add to Cart</button>
                         <button type="button" class="btn btn-link"><i class="fas fa-money-bill-wave-alt"></i> Buy Now</button>
                         <button type="button" class="btn btn-danger btn-link" data-dismiss="modal">Close</button>
                     </div>

@@ -19,8 +19,17 @@ function checkStuff() {
     firebase.database().ref("Computer Access"+"/").child("/").on("value", function(snapshot) {
         snapshot.forEach(function(childSnapshot) {
             var childData = childSnapshot.val();
-            $(".right").html(`${$(".right").html()}${childData.code}`);
-            $(".bs-modal").html(`${$(".bs-modal").html()}${childData.code1}`);
+
+            $(".right").html(`<div class="headet">${$(".right").html()}${childData.code} <div class="modal-of-buy">${childData.code1}</div> </div>`);
+
+            $('#addToCart').click(function() {
+                    var cart = parseInt(localStorage.getItem("Cart"));
+                    localStorage.setItem("Cart", ++cart);
+                    
+                    var cart1 = $("#addToCart").parent().parent().parent().parent().parent().parent().parent()[0].outerHTML;
+    
+                    console.log(cart1);
+            })
         })
     })
 }
